@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Elite Fitness Coaching - Growth</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="High-converting fitness coaching landing page.">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f0f0f;
+color:white;
+}
+
+.container{
+width:90%;
+max-width:1100px;
+margin:auto;
+}
+
+nav{
+position:fixed;
+width:100%;
+background:#111;
+padding:15px 0;
+top:0;
+z-index:1000;
+text-align:center;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-weight:500;
+}
+
+header{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+background:linear-gradient(to right,#111,#1a1a1a);
+padding-top:60px;
+}
+
+h1{
+font-size:3rem;
+margin-bottom:20px;
+}
+
+h2{
+font-size:2rem;
+margin-bottom:30px;
+}
+
+p{
+color:#ccc;
+margin-bottom:20px;
+}
+
+.btn{
+display:inline-block;
+background:#00ff88;
+color:black;
+padding:15px 30px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+.btn:hover{
+background:white;
+}
+
+section{
+padding:80px 0;
+text-align:center;
+}
+
+.cards{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.card{
+background:#1a1a1a;
+padding:30px;
+border-radius:15px;
+width:300px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+form{
+display:flex;
+flex-direction:column;
+gap:15px;
+max-width:400px;
+margin:auto;
+}
+
+input, textarea{
+padding:12px;
+border:none;
+border-radius:10px;
+}
+
+footer{
+background:#111;
+padding:40px;
+text-align:center;
+color:#777;
+}
+
+@media(max-width:768px){
+h1{font-size:2rem;}
+.cards{flex-direction:column;}
+.card{width:90%;}
+header{height:auto;padding:120px 0;}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="#about">About</a>
+<a href="#method">Method</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<header>
+<div class="container">
+<h1>Online Coaching That Gets Real Results</h1>
+<p>Custom training & nutrition plans built around your goals.</p>
+<a href="#contact" class="btn">Book Free Call</a>
+</div>
+</header>
+
+<section id="about">
+<div class="container">
+<h2>Why Work With Me?</h2>
+<p>Over 100+ successful transformations and personalized support.</p>
+</div>
+</section>
+
+<section id="method">
+<div class="container">
+<h2>My Method</h2>
+<div class="cards">
+<div class="card">
+<h3>Personal Plan</h3>
+<p>Built for your body and lifestyle.</p>
+</div>
+<div class="card">
+<h3>Weekly Reviews</h3>
+<p>Track and adjust progress weekly.</p>
+</div>
+<div class="card">
+<h3>Direct Support</h3>
+<p>Constant accountability & motivation.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+<h2>Apply Now</h2>
+<form>
+<input type="text" placeholder="Your Name">
+<input type="email" placeholder="Your Email">
+<textarea placeholder="Your Goals"></textarea>
+<button class="btn">Submit</button>
+</form>
+</div>
+</section>
+
+<footer>
+© 2026 Elite Fitness Coaching
+</footer>
+
+</body>
+</html>
