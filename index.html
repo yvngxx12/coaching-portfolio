@@ -3,116 +3,167 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lucas Web Studio</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
+<title>Atlas Digital | High-Converting Websites</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 <style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
+body{background:#0a0a0a;color:#ffffff;overflow-x:hidden;}
+.container{width:90%;max-width:1200px;margin:auto;}
+nav{display:flex;justify-content:space-between;align-items:center;padding:25px 0;}
+.logo{font-weight:800;font-size:1.2rem;letter-spacing:2px;}
+nav a{color:#aaa;text-decoration:none;margin-left:30px;font-size:0.9rem;transition:0.3s;}
+nav a:hover{color:#fff;}
 
-body{
-background:#0f0f0f;
-color:white;
-text-align:center;
-}
-
-header{
-padding:100px 20px;
-}
-
-h1{
-font-size:3rem;
-margin-bottom:20px;
-}
-
-p{
-color:#ccc;
-margin-bottom:30px;
-}
-
-.plans{
-display:flex;
-justify-content:center;
-gap:30px;
-flex-wrap:wrap;
-padding:50px 20px;
-}
-
-.plan{
-background:#1a1a1a;
-padding:40px;
-border-radius:15px;
-width:280px;
-transition:0.3s;
-}
-
-.plan:hover{
-transform:translateY(-10px);
-}
-
-.price{
-font-size:2rem;
-margin:20px 0;
-color:#00ff88;
-}
+.hero{height:90vh;display:flex;align-items:center;}
+.hero-content{max-width:700px;}
+.hero h1{font-size:3.5rem;line-height:1.1;margin-bottom:20px;}
+.hero span{color:#00ff88;}
+.hero p{color:#999;font-size:1.1rem;margin-bottom:40px;}
 
 .btn{
 display:inline-block;
-background:#00ff88;
-color:black;
-padding:12px 25px;
-border-radius:25px;
+padding:14px 30px;
+border-radius:30px;
 text-decoration:none;
-font-weight:bold;
+font-weight:600;
+background:#00ff88;
+color:#000;
+transition:0.3s;
+}
+.btn:hover{opacity:0.8;}
+
+.section{padding:100px 0;}
+.section h2{font-size:2.5rem;margin-bottom:40px;}
+
+.pricing{
+display:flex;
+gap:30px;
+flex-wrap:wrap;
 }
 
-footer{
+.plan{
+flex:1;
+min-width:250px;
+background:#111;
 padding:40px;
-color:#777;
+border-radius:15px;
+transition:0.3s;
+}
+
+.plan:hover{transform:translateY(-10px);}
+
+.plan h3{margin-bottom:15px;font-size:1.3rem;}
+.price{font-size:2rem;margin:20px 0;color:#00ff88;}
+.plan ul{list-style:none;margin-bottom:30px;}
+.plan ul li{margin-bottom:10px;color:#888;font-size:0.95rem;}
+
+.contact-box{
+background:#111;
+padding:50px;
+border-radius:20px;
+text-align:center;
+}
+
+.footer{
+padding:50px 0;
+text-align:center;
+color:#666;
+border-top:1px solid #222;
+margin-top:80px;
+}
+
+@media(max-width:768px){
+.hero{height:auto;padding:80px 0;}
+.hero h1{font-size:2.2rem;}
+.pricing{flex-direction:column;}
 }
 </style>
 </head>
 
 <body>
 
-<header>
-<h1>High Converting Websites for Coaches</h1>
-<p>I build professional websites that attract clients and increase revenue.</p>
-</header>
+<div class="container">
 
-<section class="plans">
+<nav>
+<div class="logo">ATLAS DIGITAL</div>
+<div>
+<a href="#pricing">Pricing</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<section class="hero">
+<div class="hero-content">
+<h1>We build <span>high-converting</span> websites for coaches & digital brands.</h1>
+<p>Premium design. Strategic structure. Built to attract and convert high-value clients.</p>
+<a href="#pricing" class="btn">View Pricing</a>
+</div>
+</section>
+
+<section id="pricing" class="section">
+<h2>Pricing</h2>
+
+<div class="pricing">
 
 <div class="plan">
-<h2>Starter</h2>
-<p class="price">$150</p>
-<p>Landing page + mobile responsive</p>
+<h3>Starter</h3>
+<div class="price">$150</div>
+<ul>
+<li>1 Landing Page</li>
+<li>Mobile Responsive</li>
+<li>Basic Branding</li>
+<li>Lead Section</li>
+</ul>
 <a href="/starter" class="btn">View Demo</a>
 </div>
 
 <div class="plan">
-<h2>Growth</h2>
-<p class="price">$600</p>
-<p>Multi-section site + form + better design</p>
+<h3>Growth</h3>
+<div class="price">$600</div>
+<ul>
+<li>Multi-Section Website</li>
+<li>Conversion Structure</li>
+<li>Contact Form</li>
+<li>Stronger Branding</li>
+</ul>
 <a href="/growth" class="btn">View Demo</a>
 </div>
 
 <div class="plan">
-<h2>Premium</h2>
-<p class="price">$1200</p>
-<p>High-end design + branding + full structure</p>
+<h3>Premium</h3>
+<div class="price">$1200</div>
+<ul>
+<li>High-End Design</li>
+<li>Authority Positioning</li>
+<li>Advanced Structure</li>
+<li>Full Brand Feel</li>
+</ul>
 <a href="/premium" class="btn">View Demo</a>
+</div>
+
+</div>
+</section>
+
+<section id="contact" class="section">
+<h2>Let's Build Something Powerful</h2>
+
+<div class="contact-box">
+<p style="color:#999;margin-bottom:30px;">
+Ready to elevate your online presence?
+</p>
+
+<a href="mailto:atlasyvng248@gmail.com" class="btn" style="margin-right:15px;">Email Me</a>
+
+<a href="https://wa.me/549XXXXXXXXXX" class="btn">WhatsApp</a>
 </div>
 
 </section>
 
-<footer>
-© 2026 Lucas Web Studio
-</footer>
+<div class="footer">
+© 2026 Atlas Digital — All rights reserved.
+</div>
+
+</div>
 
 </body>
 </html>
