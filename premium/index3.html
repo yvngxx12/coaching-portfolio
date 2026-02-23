@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elite Coaching | Premium Experience</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(135deg,#050505,#0f0f17);
+color:#fff;
+overflow-x:hidden;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+nav{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:rgba(0,0,0,0.7);
+backdrop-filter:blur(10px);
+padding:20px 0;
+z-index:1000;
+}
+
+.nav-content{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-weight:800;
+letter-spacing:3px;
+font-size:1.2rem;
+}
+
+nav a{
+color:#aaa;
+text-decoration:none;
+margin-left:35px;
+transition:0.3s;
+font-weight:500;
+}
+
+nav a:hover{
+color:#00ff99;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+padding-top:120px;
+}
+
+.hero-content{
+max-width:750px;
+}
+
+h1{
+font-size:3.8rem;
+line-height:1.2;
+margin-bottom:25px;
+}
+
+.highlight{
+color:#00ff99;
+}
+
+p{
+color:#aaa;
+font-size:1.15rem;
+line-height:1.8;
+margin-bottom:25px;
+}
+
+.btn{
+display:inline-block;
+padding:16px 38px;
+border-radius:50px;
+background:#00ff99;
+color:#000;
+text-decoration:none;
+font-weight:700;
+transition:0.3s;
+margin-right:15px;
+}
+
+.btn:hover{
+opacity:0.85;
+}
+
+.section{
+padding:120px 0;
+}
+
+.section h2{
+font-size:2.7rem;
+margin-bottom:50px;
+}
+
+.cards{
+display:flex;
+gap:40px;
+flex-wrap:wrap;
+}
+
+.card{
+flex:1;
+min-width:280px;
+background:rgba(255,255,255,0.03);
+padding:50px;
+border-radius:25px;
+backdrop-filter:blur(15px);
+transition:0.3s;
+border:1px solid rgba(255,255,255,0.05);
+}
+
+.card:hover{
+transform:translateY(-12px);
+border-color:#00ff99;
+}
+
+.price{
+font-size:2rem;
+color:#00ff99;
+margin:20px 0;
+}
+
+.contact-box{
+background:rgba(255,255,255,0.03);
+padding:70px;
+border-radius:30px;
+text-align:center;
+border:1px solid rgba(255,255,255,0.05);
+}
+
+.footer{
+padding:70px 0;
+text-align:center;
+color:#555;
+border-top:1px solid #111;
+margin-top:100px;
+}
+
+@media(max-width:768px){
+h1{
+font-size:2.4rem;
+}
+.cards{
+flex-direction:column;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="container nav-content">
+<div class="logo">ELITE PERFORMANCE</div>
+<div>
+<a href="#about">About</a>
+<a href="#programs">Programs</a>
+<a href="#contact">Apply</a>
+</div>
+</div>
+</nav>
+
+<div class="container">
+
+<section class="hero">
+<div class="hero-content">
+<h1>High Performance Coaching For <span class="highlight">Serious Individuals</span></h1>
+
+<p>
+This is not for everyone.
+This is for disciplined professionals who demand structure, clarity and elite results.
+</p>
+
+<p>
+We build physiques.  
+We build discipline.  
+We build identity.
+</p>
+
+<a href="#programs" class="btn">View Programs</a>
+<a href="#contact" class="btn">Apply Now</a>
+
+</div>
+</section>
+
+<section id="about" class="section">
+<h2>The Premium Standard</h2>
+
+<p style="max-width:750px;">
+This coaching system is designed around precision, performance and accountability.
+Every detail is structured to maximize results while respecting your lifestyle and professional responsibilities.
+</p>
+</section>
+
+<section id="programs" class="section">
+<h2>Private Coaching Packages</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Online Transformation</h3>
+<div class="price">$299 / month</div>
+<p>
+Custom training program, nutrition strategy, weekly check-ins, performance tracking dashboard and direct messaging support.
+</p>
+</div>
+
+<div class="card">
+<h3>Elite Mentorship</h3>
+<div class="price">$799 / month</div>
+<p>
+Everything included plus mindset coaching, video call sessions, habit restructuring and high-performance planning.
+</p>
+</div>
+
+<div class="card">
+<h3>Executive 1:1 Coaching</h3>
+<div class="price">$1500 / month</div>
+<p>
+Fully personalized strategy, priority support, direct weekly calls and lifestyle optimization for elite professionals.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact" class="section">
+<h2>Apply For Premium Coaching</h2>
+
+<div class="contact-box">
+
+<p style="color:#aaa;margin-bottom:35px;">
+Limited availability. Only committed individuals are accepted.
+</p>
+
+<a href="mailto:coach@email.com" class="btn">
+Email Application
+</a>
+
+<a href="https://wa.me/15551234567" class="btn">
+WhatsApp Direct
+</a>
+
+</div>
+
+</section>
+
+<div class="footer">
+Premium Demo — Atlas Digital
+</div>
+
+</div>
+
+</body>
+</html>
