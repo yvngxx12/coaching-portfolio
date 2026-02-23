@@ -16,8 +16,8 @@ scroll-behavior:smooth;
 }
 
 body{
-background:linear-gradient(135deg,#050505,#0f0f17);
-color:#fff;
+background:radial-gradient(circle at top left,#1a1028,#050507 60%);
+color:#f5f5f5;
 overflow-x:hidden;
 }
 
@@ -32,10 +32,11 @@ position:fixed;
 top:0;
 left:0;
 width:100%;
-background:rgba(0,0,0,0.7);
-backdrop-filter:blur(10px);
+background:rgba(10,10,15,0.7);
+backdrop-filter:blur(15px);
 padding:20px 0;
 z-index:1000;
+border-bottom:1px solid rgba(255,255,255,0.05);
 }
 
 .nav-content{
@@ -47,7 +48,8 @@ align-items:center;
 .logo{
 font-weight:800;
 letter-spacing:3px;
-font-size:1.2rem;
+font-size:1.1rem;
+color:#d4af37;
 }
 
 nav a{
@@ -59,7 +61,7 @@ font-weight:500;
 }
 
 nav a:hover{
-color:#00ff99;
+color:#d4af37;
 }
 
 .hero{
@@ -80,11 +82,11 @@ margin-bottom:25px;
 }
 
 .highlight{
-color:#00ff99;
+color:#d4af37;
 }
 
 p{
-color:#aaa;
+color:#b5b5b5;
 font-size:1.15rem;
 line-height:1.8;
 margin-bottom:25px;
@@ -94,7 +96,7 @@ margin-bottom:25px;
 display:inline-block;
 padding:16px 38px;
 border-radius:50px;
-background:#00ff99;
+background:linear-gradient(90deg,#d4af37,#f1d97a);
 color:#000;
 text-decoration:none;
 font-weight:700;
@@ -103,7 +105,8 @@ margin-right:15px;
 }
 
 .btn:hover{
-opacity:0.85;
+transform:translateY(-3px);
+box-shadow:0 10px 25px rgba(212,175,55,0.3);
 }
 
 .section{
@@ -113,6 +116,7 @@ padding:120px 0;
 .section h2{
 font-size:2.7rem;
 margin-bottom:50px;
+color:#d4af37;
 }
 
 .cards{
@@ -129,32 +133,33 @@ padding:50px;
 border-radius:25px;
 backdrop-filter:blur(15px);
 transition:0.3s;
-border:1px solid rgba(255,255,255,0.05);
+border:1px solid rgba(212,175,55,0.15);
 }
 
 .card:hover{
 transform:translateY(-12px);
-border-color:#00ff99;
+border-color:#d4af37;
+box-shadow:0 15px 40px rgba(212,175,55,0.1);
 }
 
 .price{
 font-size:2rem;
-color:#00ff99;
+color:#d4af37;
 margin:20px 0;
 }
 
 .contact-box{
-background:rgba(255,255,255,0.03);
+background:rgba(255,255,255,0.02);
 padding:70px;
 border-radius:30px;
 text-align:center;
-border:1px solid rgba(255,255,255,0.05);
+border:1px solid rgba(212,175,55,0.2);
 }
 
 .footer{
 padding:70px 0;
 text-align:center;
-color:#555;
+color:#777;
 border-top:1px solid #111;
 margin-top:100px;
 }
@@ -188,17 +193,10 @@ flex-direction:column;
 
 <section class="hero">
 <div class="hero-content">
-<h1>High Performance Coaching For <span class="highlight">Serious Individuals</span></h1>
+<h1>Luxury Performance Coaching For <span class="highlight">High Achievers</span></h1>
 
 <p>
-This is not for everyone.
-This is for disciplined professionals who demand structure, clarity and elite results.
-</p>
-
-<p>
-We build physiques.  
-We build discipline.  
-We build identity.
+Designed for professionals who operate at elite levels and expect the same precision from their body and discipline.
 </p>
 
 <a href="#programs" class="btn">View Programs</a>
@@ -208,11 +206,11 @@ We build identity.
 </section>
 
 <section id="about" class="section">
-<h2>The Premium Standard</h2>
+<h2>The Gold Standard</h2>
 
 <p style="max-width:750px;">
-This coaching system is designed around precision, performance and accountability.
-Every detail is structured to maximize results while respecting your lifestyle and professional responsibilities.
+Every protocol is engineered for measurable, sustainable transformation.
+This is structured coaching for serious individuals committed to excellence.
 </p>
 </section>
 
@@ -224,25 +222,19 @@ Every detail is structured to maximize results while respecting your lifestyle a
 <div class="card">
 <h3>Online Transformation</h3>
 <div class="price">$299 / month</div>
-<p>
-Custom training program, nutrition strategy, weekly check-ins, performance tracking dashboard and direct messaging support.
-</p>
+<p>Precision training plan, custom nutrition, weekly accountability and full performance tracking.</p>
 </div>
 
 <div class="card">
 <h3>Elite Mentorship</h3>
 <div class="price">$799 / month</div>
-<p>
-Everything included plus mindset coaching, video call sessions, habit restructuring and high-performance planning.
-</p>
+<p>Advanced strategy, mindset integration, video calls and structured performance systems.</p>
 </div>
 
 <div class="card">
 <h3>Executive 1:1 Coaching</h3>
 <div class="price">$1500 / month</div>
-<p>
-Fully personalized strategy, priority support, direct weekly calls and lifestyle optimization for elite professionals.
-</p>
+<p>Fully customized elite system, priority support and lifestyle optimization.</p>
 </div>
 
 </div>
@@ -254,8 +246,8 @@ Fully personalized strategy, priority support, direct weekly calls and lifestyle
 
 <div class="contact-box">
 
-<p style="color:#aaa;margin-bottom:35px;">
-Limited availability. Only committed individuals are accepted.
+<p style="color:#b5b5b5;margin-bottom:35px;">
+Limited spots available. Applications are reviewed personally.
 </p>
 
 <a href="mailto:coach@email.com" class="btn">
